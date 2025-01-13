@@ -1,0 +1,20 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Izin untuk mengakses internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="planner"
+        tools:replace="android:label">
+        <!-- Komponen aplikasi lainnya, seperti aktivitas, layanan, dll. -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
